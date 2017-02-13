@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keziyah's Guessing Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+  <!--HEADER -->
+  <div class="header">
+    <h1 class="cursive">Guessing Game</h1>
+    <h3>Guess a number between 1 and 100</h3>
+  </div>
+
+<div class="container">
+<div class="row">
+
+  <!--Buttons -->
+  <div class="col-xs-3">
+    <button id="hint" class="btn btn-primary btn-lg">Hint</button>
+    <button id="reset" class="btn btn-primary btn-lg">Reset</button>
+  </div>
+
+  <!--Main Input and go -->
+  <div class="col-xs-6" id="input">
+    <input id="player-input" placeholder="#" maxlength="3" autofocus=autofocus</input>
+    <button id="submit">Go!</button>
+  </div>
+
+<!--changing messages -->
+<div class="message col-xs-3">
+  <div id="winLose">
+    <h1 class="cursive">Try Again!</h1>
+  </div>
+  <div id="thermometer">
+    <h3>Getting warmer...</h3>
+  </div>
+</div>
+
+</div>
+
+<!---List of wrong guesses -->
+    <div id='guesses'>
+      <ul id='guess-list'>
+        <li class='guess'>1</li>
+        <li class='guess'>45</li>
+        <li class='guess'>90</li>
+        <li class='guess'>100</li>
+        <li class='guess'>2</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <!--FOOTER -->
+  <footer class="footer">
+    <p>A project by Keziyah Lewis</p>
+      <div class="logo-footer">
+        <img src="fullstacklogo.png">
+        <img src="ghlogo.png">
+    </div>
+  </footer>
+</body>
+</html>

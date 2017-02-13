@@ -1,0 +1,148 @@
+@import "normalize.css";
+
+/*what to do when browser sync isnt reading background image files correctly: http://stackoverflow.com/questions/32129917/why-the-path-is-incorrect-with-gulp-and-browser-sync */
+html, body {
+  min-height: 100%;
+}
+
+html {
+  position: relative;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #faf4f6;
+  background-color: #3a5f64;
+  background-image: url("../../../milkshakeedited.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 55px;
+}
+
+/*margin-bottom of the body should be the hegith of the footer */
+
+.container-fluid {
+  padding-bottom: 22px;
+}
+
+.container {
+  margin-top: 10rem;
+}
+
+.cursive {
+  font-family: "Pacifico", cursive;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.header {
+  margin-left: 10%;
+}
+
+.header h3 {
+  width: 40rem;
+}
+
+#hint, #reset {
+  display: block;
+  border: none;
+  margin-left: 20%;
+  height: 8rem;
+  width: 12rem;
+  font-size: 3.5rem;
+}
+
+#hint {
+  margin-bottom: 6rem;
+  background-color: rgba(250, 246, 244, 50);
+  color: #31180e;
+}
+
+#reset {
+  background-color: rgba(123, 9, 6, 80);
+
+}
+
+#guesses {
+  width: 60rem;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+
+#input {
+  margin-top: -10rem;
+}
+
+#player-input {
+  height: 35rem;
+  width: 35rem;
+  border-radius: 50%;
+  color: #31180e;
+  font-size: 23rem;
+  text-align: center;
+  margin-left: 20%;
+  background-color: rgba(250, 244, 246, 51);
+}
+
+/*here I used relative positioning. and moved the button 50px from
+the right compared to where it normally was */
+
+#submit {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  background-color: #3a5f64;
+  border: none;
+  font-size: 3rem;
+  position: relative;
+  right: 50px;
+}
+
+button, input:focus {
+  outline: 0;
+}
+
+li {
+  color: #31180e;
+  font-size: 3.75rem;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  border-radius: 15px;
+  width: 7rem;
+  height: 5rem;
+  margin-left: 3rem;
+  background-color: rgba(250, 244, 246, 51);
+}
+
+footer {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 55px;
+}
+
+footer p {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 15px;
+  margin-left: 10%;
+  color: #333;
+}
+
+footer img {
+  height: 50px;
+}
+
+.logo-footer {
+  width: 45rem;
+  display: inline-block;
+  margin-left: 20%;
+}
