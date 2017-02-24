@@ -89,6 +89,10 @@ h1 {
   background-color: rgba(250, 244, 246, 51);
 }
 
+#winLose {
+  line-height: 7rem;
+}
+
 /*here I used relative positioning. and moved the button 50px from
 the right compared to where it normally was */
 
