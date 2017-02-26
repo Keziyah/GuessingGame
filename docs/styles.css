@@ -460,6 +460,7 @@ template {
   display: none;
 }
 
+/*KEZIYAH'S CSS* */
 /*what to do when browser sync isnt reading background image files correctly: http://stackoverflow.com/questions/32129917/why-the-path-is-incorrect-with-gulp-and-browser-sync */
 
 html, body {
@@ -475,14 +476,14 @@ body {
   font-weight: 700;
   color: #faf4f6;
   background-color: #3a5f64;
-  background-image: url("../../../milkshakeedited.png");
+  background-image: url("milkshakeedited.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-bottom: 55px;
 }
 
-/*margin-bottom of the body should be the hegith of the footer */
+/*margin-bottom of the body should be the height of the footer */
 
 .container-fluid {
   padding-bottom: 22px;
@@ -554,7 +555,7 @@ h1 {
   line-height: 7rem;
 }
 
-/*here I used relative positioning. and moved the button 50px from
+/*here I used relative positioning. and moved the "GO" button 50px from
 the right compared to where it normally was */
 
 #submit {
@@ -566,6 +567,11 @@ the right compared to where it normally was */
   font-size: 3rem;
   position: relative;
   right: 50px;
+}
+
+#thermometer {
+  color: rgb(250, 246, 244);
+  background-color: rgba(50, 50, 50, 0.5);
 }
 
 button, input:focus {
