@@ -3,7 +3,7 @@ function generateWinningNumber() {
 }
 
 function shuffle(arr) {
-  var i = arr.length; //the element that is currently. being shuffuled. in the loop it starts at length - 1
+  var i = arr.length; //the element that is currently. being shuffled. in the loop it starts at length - 1
   var j; //the number that will be used for the random element to be switched with i
   var temp; //temporary box used for shuffling
 
@@ -34,16 +34,17 @@ Game.prototype.isLower = function() {
 Game.prototype.playersGuessSubmission = function(n) {
   if (n < 1 || n > 100 || typeof n !== "number") {
     throw "That is an invalid guess.";
-  }
+  } else {
   this.playersGuess = n;
   return this.checkGuess();
+}
 }
 
 Game.prototype.checkGuess = function() {
 
   if (this.playersGuess === this.winningNumber) {
     $("#winLose").text("You win!");
-    $('#hint, #submit').prop("disabled",true);
+    $('#hint, #submit, #player-input').prop("disabled",true);
     return  "You just got lucky... \n Press reset to play again.";
   } else  {
     if(this.pastGuesses.indexOf(this.playersGuess) > -1) {
@@ -56,7 +57,7 @@ Game.prototype.checkGuess = function() {
       $('#guess-list li:nth-child('+ this.pastGuesses.length +')').text(this.playersGuess);
       if(this.pastGuesses.length === 5) {
         $("#winLose").text("You lose! Bummer.");
-        $('#hint, #submit').prop("disabled",true);
+        $('#hint, #submit, #player-input').prop("disabled",true);
         return "Sashay away... \n Press reset to play again.";
       }
       else {
@@ -111,7 +112,7 @@ $(document).ready(function() {
 
   $("#reset").on("click", function() {
     newGame();
-    $('#hint, #submit').prop("disabled", false);
+    $('#hint, #submit, #player-input').prop("disabled", false);
     $("#displayHint").text("Guess a number between 1 and 100.");
     $("#thermometer").text("Gonna lose this time too.");
     $("#winLose").text("Again? Ok.");

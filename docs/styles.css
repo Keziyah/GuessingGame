@@ -476,7 +476,7 @@ body {
   font-weight: 700;
   color: #faf4f6;
   background-color: #3a5f64;
-  background-image: url("milkshakeedited.png");
+  background-image: url("milkshakeEdited.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -574,7 +574,7 @@ the right compared to where it normally was */
   background-color: rgba(50, 50, 50, 0.5);
 }
 
-button, input:focus {
+#hint, #reset, #submit, #player-input:focus {
   outline: 0;
 }
 
